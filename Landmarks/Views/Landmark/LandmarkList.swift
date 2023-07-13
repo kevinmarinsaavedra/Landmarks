@@ -23,7 +23,7 @@ struct LandmarkList: View {
                 Toggle("Favorite only", isOn: $showFavoritesOnly)
 
                 ForEach(filteredLandmarks) { landmark in
-                    let landmarkBinding = bindingForLandmark(landmark)
+                    let landmarkBinding = modelData.bindingForLandmark(landmark)
 
                     NavigationLink(destination: LandmarkDetail(landmark: landmarkBinding)) {
                         LandmarkRow(landmark: landmark)
@@ -33,13 +33,6 @@ struct LandmarkList: View {
             .scrollIndicators(.hidden)
             .navigationTitle("Landmarks")
         }
-    }
-
-    func bindingForLandmark(_ landmark: Landmark) -> Binding<Landmark> {
-        guard let landmarkIndex = modelData.landmarks.firstIndex(where: { $0.id == landmark.id }) else {
-            fatalError("Invalid landmark")
-        }
-        return $modelData.landmarks[landmarkIndex]
     }
 }
 

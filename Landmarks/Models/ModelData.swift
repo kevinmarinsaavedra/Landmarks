@@ -7,10 +7,33 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    
+    var features: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
+    
+    var categories: [Category: [Landmark]] {
+        Dictionary(
+            grouping: landmarks,
+            by: {$0.category}
+        )
+    }
+    
+    func bindingForLandmark(_ landmark: Landmark) -> Binding<Landmark> {
+        guard let landmarkIndex = landmarks.firstIndex(where: { $0.id == landmark.id }) else {
+            fatalError("Invalid landmark")
+        }
+        
+        return Binding<Landmark>(
+            get: { self.landmarks[landmarkIndex] },
+            set: { self.landmarks[landmarkIndex] = $0 }
+        )
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
