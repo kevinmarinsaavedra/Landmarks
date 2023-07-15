@@ -9,16 +9,16 @@ import SwiftUI
 
 struct HikeDetail: View {
     let hike: Hike
-    @State var dataToShow = \Hike.Observation.elevation
+    @State var dataToShow = \Observation.elevation
 
     var buttons = [
-        ("Elevation", \Hike.Observation.elevation),
-        ("Heart Rate", \Hike.Observation.heartRate),
-        ("Pace", \Hike.Observation.pace)
+        ("Elevation", \Observation.elevation),
+        ("Heart Rate", \Observation.heartRate),
+        ("Pace", \Observation.pace)
     ]
 
     var body: some View {
-        return VStack {
+        VStack {
             HikeGraph(hike: hike, path: dataToShow)
                 .frame(height: 200)
 
