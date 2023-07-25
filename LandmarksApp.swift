@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import PushKit
 
 @main
 struct LandmarksApp: App {
+    
+    #if os(watchOS)
+    private let local = LocalNotifications()
+    #endif
+
     @StateObject private var modelData = ModelData()
 
     var body: some Scene {
@@ -16,5 +22,12 @@ struct LandmarksApp: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        
+        #if os(watchOS)
+        WKNotificationScene(
+            controller: NotificationController.self,
+            category: "LandmarkNear"
+        )
+        #endif
     }
 }
