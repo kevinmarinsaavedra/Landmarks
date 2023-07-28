@@ -1,6 +1,6 @@
-# README - Proyecto en Swift
+**README - Proyecto en Swift**
 
-## Landmarks
+# Landmarks
 
 ### Descripción
 
@@ -22,4 +22,4 @@ En muchas oportunidades, cuando intentamos aprender algo nuevo, siempre seguimos
 
 ### Licencia
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](https://github.com/kevinmarinsaavedra/WatchNotificationLocal/blob/main/LICENSE) para obtener más información.
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](https://github.com/kevinmarinsaavedra/Landmarks/blob/main/LICENSE) para obtener más información.
