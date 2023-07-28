@@ -10,7 +10,7 @@ import SwiftUI
 struct TextOverlay: View {
     var landmark: Landmark
 
-    var gradient: LinearGradient {
+    private var gradient: LinearGradient {
         .linearGradient(
             Gradient(colors: [.black.opacity(0.6), .black.opacity(0)]),
             startPoint: .bottom,

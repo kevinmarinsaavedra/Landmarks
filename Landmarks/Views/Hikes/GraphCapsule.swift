@@ -14,11 +14,11 @@ struct GraphCapsule: View {
     var range: Range<Double>
     var overallRange: Range<Double>
 
-    var heightRatio: CGFloat {
+    private var heightRatio: CGFloat {
         max(CGFloat(magnitude(of: range) / magnitude(of: overallRange)), 0.15)
     }
 
-    var offsetRatio: CGFloat {
+    private var offsetRatio: CGFloat {
         CGFloat((range.lowerBound - overallRange.lowerBound) / magnitude(of: overallRange))
     }
 

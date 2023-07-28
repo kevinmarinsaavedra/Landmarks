@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Badge: View {
-    
     let numberBadge = 6
     var rangeValues: Range<Int> { 0..<numberBadge }
 

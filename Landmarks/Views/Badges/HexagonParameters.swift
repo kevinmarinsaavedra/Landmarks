@@ -8,13 +8,6 @@
 import Foundation
 
 struct HexagonParameters {
-    
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
     static let adjustment: CGFloat = 0.085
     
     static let starPoint: CGPoint = CGPoint(x: 0.95, y: 0.20 + adjustment)

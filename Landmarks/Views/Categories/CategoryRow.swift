@@ -12,7 +12,7 @@ struct CategoryRow: View {
     var category: Category
     @Binding var landmarks: [Landmark]
     
-    var filteredLandmarks: [Landmark] {
+    private var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
             (landmark.category == category)
         }
