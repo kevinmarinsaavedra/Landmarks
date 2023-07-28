@@ -100,6 +100,9 @@
 		3372A56F2A7420AF004F73CF /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A56E2A7420AF004F73CF /* Segment.swift */; };
 		3372A5702A7420AF004F73CF /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A56E2A7420AF004F73CF /* Segment.swift */; };
 		3372A5712A7420AF004F73CF /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372A56E2A7420AF004F73CF /* Segment.swift */; };
+		3372A5732A742AC7004F73CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3372A5722A742AC7004F73CF /* README.md */; };
+		3372A5742A742AC7004F73CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3372A5722A742AC7004F73CF /* README.md */; };
+		3372A5752A742AC7004F73CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3372A5722A742AC7004F73CF /* README.md */; };
 		339091E82A62DBBA00F353A2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339091E72A62DBBA00F353A2 /* Profile.swift */; };
 		339091EA2A62DBDC00F353A2 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339091E92A62DBDC00F353A2 /* Coordinates.swift */; };
 		339091ED2A62DCB900F353A2 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339091EC2A62DCB900F353A2 /* ProfileHost.swift */; };
@@ -196,6 +199,7 @@
 		3372A5622A741B6F004F73CF /* Animate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animate+Extension.swift"; sourceTree = "<group>"; };
 		3372A56A2A741FDB004F73CF /* AnyTransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extension.swift"; sourceTree = "<group>"; };
 		3372A56E2A7420AF004F73CF /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		3372A5722A742AC7004F73CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		339091E72A62DBBA00F353A2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		339091E92A62DBDC00F353A2 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		339091EC2A62DCB900F353A2 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 				33231BA02A55630800442F98 /* Landmarks */,
 				33540B1B2A6F34B400E47DE2 /* WatchLandmarks Watch App */,
 				33540C122A725EE800E47DE2 /* MacLandmarks */,
+				3372A5722A742AC7004F73CF /* README.md */,
 				33231B9F2A55630800442F98 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -592,6 +597,7 @@
 				3341C55F2A5DA7CC007ECE1C /* hikeData.json in Resources */,
 				33540B442A6FCE7100E47DE2 /* Preview Assets.xcassets in Resources */,
 				33231BAA2A55630900442F98 /* Preview Assets.xcassets in Resources */,
+				3372A5732A742AC7004F73CF /* README.md in Resources */,
 				33231BA62A55630900442F98 /* Assets.xcassets in Resources */,
 				33540B452A6FCEB700E47DE2 /* Assets.xcassets in Resources */,
 				33231BB82A55916100442F98 /* landmarkData.json in Resources */,
@@ -605,6 +611,7 @@
 				33540B3A2A6F359E00E47DE2 /* hikeData.json in Resources */,
 				33540B242A6F34B500E47DE2 /* Preview Assets.xcassets in Resources */,
 				33540B382A6F351D00E47DE2 /* Assets.xcassets in Resources */,
+				3372A5742A742AC7004F73CF /* README.md in Resources */,
 				33540B212A6F34B500E47DE2 /* Assets.xcassets in Resources */,
 				33540B3B2A6F35A100E47DE2 /* landmarkData.json in Resources */,
 				33540B4F2A6FFB2D00E47DE2 /* PushNotificationPayload.apns in Resources */,
@@ -615,6 +622,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3372A5752A742AC7004F73CF /* README.md in Resources */,
 				33540C3F2A725FEF00E47DE2 /* hikeData.json in Resources */,
 				33540C1B2A725EE900E47DE2 /* Preview Assets.xcassets in Resources */,
 				33540C182A725EE900E47DE2 /* Assets.xcassets in Resources */,
